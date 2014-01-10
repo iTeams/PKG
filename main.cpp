@@ -23,3 +23,5 @@ dc.Rectangle(r/2.0075,b-b/4.55,r-r/2.0075,b-b/5.5);
 
 dc.Rectangle(r/4,b-b/1.95,r/3.92,b-b/1.55);
 dc.Rectangle(r-r/4,b-b/1.95,r-r/3.92,b-b/1.55);
+//стеля
+dc.Rectangle(r/4,b/17,r-r/4,b/14);
