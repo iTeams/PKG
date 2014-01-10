@@ -1,9 +1,11 @@
- double r,b;
+double r,b;
 	CRect v;
 	GetClientRect (&v);
 	r=v.right;
 	b=v.bottom;
+	CPen pen_w;
 	CPen pen_b;
+pen_w. CreatePen(PS_SOLID, 1, RGB(255,255,255)); 
 pen_b. CreatePen(PS_SOLID, 1, RGB(0,0,0)); 
 dc.SelectObject(&pen_b);
 
