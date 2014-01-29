@@ -49,3 +49,24 @@ glVertex2f(250,-85+i);
 glVertex2f(250,-85+i);
 glVertex2f(250,-35+i);
 }
+void Init()
+{
+glClearColor(1.0,1.0,1.0,1.0);
+glMatrixMode(GL_PROJECTION);
+glOrtho(-400,400,-300,100,-5,5);
+glMatrixMode(GL_MODELVIEW);
+
+}
+int main(int argc, char**argv)
+{
+glutInit(&argc,argv);
+glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB);
+glutInitWindowSize(800,400);
+glutInitWindowPosition(200,20);
+glutCreateWindow("iTeam");
+glutDisplayFunc(project);
+glutTimerFunc(50,Timer,0);
+Init();
+glutMainLoop();
+return 0;
+}
