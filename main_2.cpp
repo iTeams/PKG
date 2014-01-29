@@ -2,7 +2,7 @@
 #include "glut.h"
 #include "math.h"
 
-double pi=3.14,i,j,k=1,r=1,kut=270-45,x=0,y=10,R=4,t=2,p;
+double pi=3.14,i,j,k=1,r=1,kut=135,x=0,y=10,R=4,t=2,p;
 
 void stelya ()
 {
