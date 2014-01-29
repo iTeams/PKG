@@ -99,22 +99,36 @@ void project ()
 }
 void Timer(int)
 {
-	r+=t;
-	if(y<=-256){
-		t=0;
-		p=R;
-		R=R+2;
-		if(R==p*4){project();}
-	}
-	
-	i+=k;
-	if(-35+i==69)
-		k=-1;
-	if(-85+i==-179)
-		k=1;
-	project();
-	glutTimerFunc(50,Timer,0);
+r+=t;
+if(y<=-256){
+t=0;
+p=R;
+R=R+2;
+if(R==p*4){project();}
+if(y>=58){
+t=0;
+p=R;
+R=R+2;
+if(R==p*4){project();}
+if(x<=-358){
+t=0;
+p=R;
+R=R+2;
+if(R==p*4){project();}
+if(y>=358){
+t=0;
+p=R;
+R=R+2;
+if(R==p*4){project();}
 }
+
+i+=k;
+if(-35+i==69)
+k=-1;
+if(-85+i==-179)
+k=1;
+project();
+glutTimerFunc(50,Timer,0);
 void Init()
 {
 	glClearColor(1.0,1.0,1.0,1.0);
